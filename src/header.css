@@ -1,0 +1,16 @@
+.Header {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.navigation {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding-top: 5%;
+}
+
+.navigation > p {
+    margin: 10px;
+}
