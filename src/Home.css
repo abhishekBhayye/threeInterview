@@ -1,0 +1,76 @@
+.Shopping-list {
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.shopItemsHeader {
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.list {
+}
+
+.list > input {
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid rebeccapurple;
+}
+
+.listItems {
+    display: flex;
+    justify-content: center;
+}
+
+.listItems > p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.addListBtn {
+    padding: 3%;
+    margin: 20px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.Home > input {
+    border: none;
+}
+
+.addListButton {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.inner-List {
+    margin: 5%;
+    background-color: black;
+    color: white;
+    margin-left: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tableHeader > p {
+    padding: 5px;
+    font-weight: 800;
+    justify-content: center;
+}
+
+.tableHeader {
+    display: flex;
+    padding-left: 12px;
+}
+
+.Previous-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

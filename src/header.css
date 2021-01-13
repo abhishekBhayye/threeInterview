@@ -1,7 +1,8 @@
 .Header {
     display: flex;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
+    background-color: white;
 }
 
 .navigation {
@@ -13,4 +14,15 @@
 
 .navigation > p {
     margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header_logo {
+        width: 50%;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }   
+
 }

@@ -1,0 +1,32 @@
+.Footer {
+    padding: 15px;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+.copyrightSection {
+    font-family: sans-serif;
+}
+
+.copyrightSection .first {
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    display: inline-block;
+    font-size: .75rem;
+    line-height: 1.7rem;
+}
