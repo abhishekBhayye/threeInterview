@@ -13,10 +13,7 @@ export default class header extends Component {
                 </Link>
 
                 <nav className="navigation">
-                    <p>Home</p>
-                    <p>ShoppingList</p>
-                    <p>About Us</p>
-                    <p>Help and Support</p>
+                    <p>Login</p>
                 </nav>
             </div>
         )

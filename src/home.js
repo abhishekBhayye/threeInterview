@@ -54,17 +54,24 @@ export default class home extends Component {
         return (
             <div className="Home">
 
+                <div className="introVideo">
+                    <video autoPlay loop>
+                        <source src="threeIntro.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
                 <p className="shopItemsHeader">Add Items To Your Shopping List</p>
 
                 <div className="Shopping-list">
                     
                     <form className="list" onSubmit={(e) => this.onSubmitHandler(e) }>
                         
-                        <input type="text" name="shoppingListInput" placeholder="Item Name" onChange={(e) => this.onChangeHandler(e) } />
-                        <input type="text" name="quantity" placeholder="Quantity" onChange={(e) => this.onChangeHandler(e) } />
-                        
-                        
-                        <button type="button" className="addItemButton" onClick={() => this.onAddHandler() }>Add Item</button> 
+                        <div className="addNewItem">                        
+                            <input type="text" name="shoppingListInput" placeholder="Item Name" onChange={(e) => this.onChangeHandler(e) } />
+                            <input type="number" name="quantity" placeholder="Quantity" onChange={(e) => this.onChangeHandler(e) } />
+                            <button type="button" className="addItemButton" onClick={() => this.onAddHandler() }>Add Item</button> 
+                        </div>
 
                         <div className="inner-List">   
                             <div className="tableHeader">
@@ -83,7 +90,7 @@ export default class home extends Component {
                                     })
                                 }
                         </div>
-                        <button type="submit" className=" btn btn-primary addListBtn">Submit</button>
+                        <button type="submit" className=" btn btn-primary addListBtn">Save List</button>
 
                     </form>
 

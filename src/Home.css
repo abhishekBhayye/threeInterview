@@ -1,7 +1,15 @@
 .Shopping-list {
-    padding: 1.4rem;
     display: flex;
     justify-content: center;
+}
+
+.introVideo {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 80vw
 }
 
 .shopItemsHeader {
@@ -12,9 +20,12 @@
 }
 
 .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.list > input {
+.addNewItem > input {
     margin: 20px;
     border: none;
     border-bottom: 2px solid rebeccapurple;
@@ -25,9 +36,28 @@
     justify-content: center;
 }
 
+input::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: Center;
+} 
+
 .listItems > p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.addNewItem {
+    display: flex;
+}
+
+.addItemButton {
+    padding: 3%;
+    border-radius: 50%;
+    margin: 20px;
+    border: none;
+    background-color: black;
+    color: white;
 }
 
 .addListBtn {
@@ -36,6 +66,8 @@
     border: none;
     background-color: rebeccapurple;
     color: white;
+    height: 50px;
+    width: 150px;
 }
 
 .Home > input {
@@ -73,4 +105,22 @@
 .Previous-list {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .addNewItem {
+        flex-direction: column;
+    }
+
+    .addItemButton {
+        border-radius: 0%;
+    }
+
+    .shopItemsHeader {
+        padding-top: 5px;
+    }
+
+    .introVideo {
+        margin-top: 50px;
+    }
 }
