@@ -16,6 +16,27 @@
     margin: 10px;
 }
 
+
+.header_link {
+    color: black;
+    text-decoration: none;
+}
+
+.header_option {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+
+.header_optionLineOne {
+    font-size: 10px;
+}
+
+.header_optionLineTwo {
+    font-size: 13px;
+    font-weight: 700;
+}
+
 @media only screen and (max-width: 600px) {
     .header_logo {
         width: 50%;

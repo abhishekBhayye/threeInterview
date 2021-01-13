@@ -4,7 +4,7 @@ import firebase from "./firebase";
 import './Home.css'
 import ShoppingList from './shoppingList'
 
-export default class home extends Component { 
+export default class Home extends Component { 
     state = { 
         shoppingListArray: [],
         shoppingListInput: "",

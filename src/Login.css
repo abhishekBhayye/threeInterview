@@ -1,0 +1,22 @@
+.login {
+    justify-content: center;
+    display: flex;
+}
+
+.login_container {
+    padding: 100px;
+}
+
+.login_signInButton {
+    padding: 3%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.loginRegisterButton {
+    padding: 3%;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+}

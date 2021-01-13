@@ -1,6 +1,5 @@
 .Footer {
     padding: 15px;
-    position: sticky;
     bottom: 0;
     background-color: black;
     color: white;
@@ -29,12 +28,4 @@ li {
     display: inline-block;
     font-size: .75rem;
     line-height: 1.7rem;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .Footer {
-        position: inherit;
-    }   
-
 }

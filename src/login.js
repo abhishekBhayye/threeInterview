@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { auth } from './firebase'
+import './Login.css'
 
 function Login() {
     const history = useHistory();
@@ -33,9 +34,10 @@ function Login() {
 
     return (
         <div className="login">
+
             <Link to="/">
-                <img className="login_logo" 
-                src="https://www.acisolutions.net/wp-content/uploads/2019/09/amazon-logo-vector-png-amazon-logo-vector-512.png" 
+                <img className="header_logo" 
+                src="threeLogo.PNG" 
                 alt=""></img>
             </Link>
             
@@ -46,13 +48,15 @@ function Login() {
                     <input value={email} onChange={event => setEmail(event.target.value)} type="email" />
                     <h5>Password</h5>
                     <input value={password} onChange={event => setPassword(event.target.value)} type="password" />
+                    <br></br>
+                    <br></br>
                     <button onClick={login} type="submit" className="login_signInButton">Sign In</button>
                 </form>
                 
                 <p>
-                    By signing-in you agree to Amazon's conditions of Use and Sale. Please see our Privacy Notice, our Cookies Notice and our Internet-Based Ads Notice.
+                    By signing-in you agree to Three's conditions of Use and Sale. Please see our Privacy Notice, our Cookies Notice and our Internet-Based Ads Notice.
                 </p>
-                <button onClick={register} className="loginRegisterButton">Create your Amazon account</button>
+                <button onClick={register} className="loginRegisterButton">Create your Shopping List account</button>
             </div>
 
         </div>
